@@ -30,3 +30,10 @@ print(stry[:6])
 another=stry[:]
 print(another)
 print(stry[1:-1])
+
+first="Kurt"
+Last="Cobain"
+message=first+' {'+Last+'} is a coder'
+msg=f'{first} [{Last}] is a programmer'
+print(message)
+print(msg)
