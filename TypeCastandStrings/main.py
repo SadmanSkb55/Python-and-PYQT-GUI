@@ -37,3 +37,15 @@ message=first+' {'+Last+'} is a coder'
 msg=f'{first} [{Last}] is a programmer'
 print(message)
 print(msg)
+xyz='This is a string'
+print(len(xyz))
+print(xyz.upper())
+print(xyz.lower())
+print(xyz.find('i'))
+print(xyz.find('is'))
+print(xyz.find('w'))
+print(xyz.find('t'))
+print(xyz.replace('is a','was a'))
+print(xyz.replace('isa','was a'))
+print('is' in xyz)
+print('was' == xyz)
