@@ -1,0 +1,41 @@
+import math
+print(10+4)
+print(40-6)
+print(10*7)
+print(12 **9)
+print(20/6)
+print(20//7)
+print(20%3)
+x=23
+x+=5
+print(x)
+x-=3
+print(x)
+x/=5
+print(x)
+x*=2
+print(x)
+x%=3
+print(x)
+x+=((x+x)*(x+3))
+x**=3
+print(x)
+x//=4
+print(x)
+v=10+3*2
+print(v)
+v=0
+v=10+3*2**2
+print(v)
+v=0
+v=(10+3)*2**2
+print(v)
+y=3.564678
+print(round(y))
+y=3.464678
+print(round(y))
+print(abs(y-(y**4)))
+print(round(abs(y-(y**4))))
+print(math.ceil(4.876))
+print(math.floor(6.788))
+#check math module of python 3 for more
