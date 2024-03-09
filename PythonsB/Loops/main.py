@@ -25,3 +25,12 @@ for price in prices:
     total+=price
 print(f'Total: {total}')
 
+for x in range(5):
+     for y in range (5):
+         print(f'x:{x} y:{y}')
+num=[5,2,5,3,5,4]
+for c in num:
+    output=''
+    for cx in range(c):
+        output+='x'
+    print(output)
