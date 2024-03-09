@@ -27,3 +27,18 @@ has_high_cgpa=True
 has_skills=False
 if has_high_cgpa and not has_skills:
     print("Fuck off")
+temp=30;
+if temp>30:
+    print("Hot")
+elif temp>=30:
+    print("Hot but 30")
+elif temp==30:
+    print("#0")
+elif temp<=30:
+    print("30 but cold")
+elif temp<30:
+    print("Cold")
+elif temp!=30:
+    print("Eh?")
+else:
+    print("Wtf") 
