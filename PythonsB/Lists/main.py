@@ -31,3 +31,33 @@ matrix[2][2]=10
 for row in matrix:
     for item in row:
         print(item)
+#list methods
+
+nums2=[2,4,6,7,9,12]
+nums2.append(39)
+print(nums2)
+nums2.insert(2,55)
+print(nums2)
+nums2.remove(39)
+print(nums2)
+matrix.clear()
+print(matrix)
+nums2.pop()
+print(nums2)
+print(nums2.index(9))
+#print(nums2.index(99))
+nums2.append(9)
+print(nums2.count(9))
+nums2.sort()
+print(nums2)
+nums2.reverse()
+print(nums2)
+nums3=nums2.copy()
+nums3.append(66)
+print(nums3)
+nsx=[3,6,8,0,6,3,6,4,7,1,0,8,5,3,6,2,7,1,7,8,9,5]
+uniques=[]
+for i in nsx:
+    if i not in uniques:
+        uniques.append(i)
+print(uniques)
