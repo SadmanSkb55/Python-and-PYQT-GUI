@@ -34,3 +34,6 @@ for ch in number:
     output+=digit_mapping.get(ch,"!")+" "
 print(output)
 
+message=input(">")
+words=message.split(' ')
+print(words)
