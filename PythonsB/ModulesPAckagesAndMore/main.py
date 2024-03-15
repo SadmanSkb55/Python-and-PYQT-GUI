@@ -33,4 +33,26 @@ for i in range(5):
 members=['Alex','Drake','Abel','Jordan']
 leader=random.choice(members)
 print(leader)
-print(members[random.randint(0,3)]) 
+print(members[random.randint(0,3)])
+
+#directory and files
+from pathlib import Path
+path=Path("Ecommerce")
+print(path.exists())
+path2=Path("Emails")
+if path2.exists():
+    path2.rmdir()#remove directory
+else:
+    path2.mkdir()#make directory
+#run two times to see wtf happens
+path3=Path()
+print(path3.glob('*.*'))
+for file in path3.glob('*.py'):
+    print(file)
+print("\n")
+for file in path3.glob('*'):
+    print(file)
+
+
+
+
