@@ -1,6 +1,12 @@
 import Converter
 from Converter import lbstokgs
 
+import Ecommerce.Shipping
+Ecommerce.Shipping.CalcShipping()
+from Ecommerce.Shipping import Cart
+Cart()
+from Ecommerce import Shipping
+Shipping.Items()
 
 
 print(Converter.kgstolbs(100))
