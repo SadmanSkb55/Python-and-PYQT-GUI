@@ -189,7 +189,7 @@ class Circle(Shape):
 
     def perimeter(self):
         return 2 * 3.14 * self.radius
-    
+
 print()
 rectangle = Rectangle(5, 4)
 print(rectangle.area())
@@ -200,6 +200,35 @@ circle = Circle(3)
 print(circle.area())
 print(circle.perimeter())
 
+
+#multithreading
+
+import threading
+import concurrent.futures
+import time
+
+def print_nums():
+    for i in range(5):
+        print(f'Second thread {i}')
+        time.sleep(1)
+
+thread = threading.Thread(target=print_nums)
+thread.start()
+
+for i in range(5):
+    print('\nMain thread:', i)
+    time.sleep(1)
+
+def print_nums2(i):
+    print(f'Second secondary thread {i}')
+    time.sleep(1)
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    executor.map(print_nums2, range(5))
+
+for i in range(5):
+    print('\n2nd Main thread:', i)
+    time.sleep(1)
 
 
 
