@@ -96,3 +96,25 @@ sq=sqare(5)
 print(sq.multiplier_Eng())
 cb=cube(8)
 print(cb.multiplier_Eng())
+print("\n")
+#encapsulation
+class Car:
+    def __init__(self, make, model):
+        self._make = make  # protected
+        self.__model = model  # private
+
+    def get_make(self):
+        return self._make
+
+    def set_model(self, model):
+        self.__model = model
+
+    def get_model(self):
+        return self.__model
+
+# Usage
+car = Car("Toyota", "gt86")
+print(car.get_make())
+print(car.get_model())
+car.set_model("Corolla")
+print(car.get_model())
