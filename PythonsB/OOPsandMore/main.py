@@ -105,16 +105,54 @@ class Car:
 
     def get_make(self):
         return self._make
-
     def set_model(self, model):
         self.__model = model
-
     def get_model(self):
         return self.__model
 
-# Usage
 car = Car("Toyota", "gt86")
 print(car.get_make())
 print(car.get_model())
 car.set_model("Corolla")
 print(car.get_model())
+print("\n")
+
+
+#generics/template
+
+#duck typing........(Liton Typing)
+class Player:
+    def __init__(self, Run):
+        self.Run = Run
+    #Type Hints
+    def repeat(self,item: str, times: int) -> str:#gibving the type as hint
+        return item * times
+
+liton=Player(0)
+print(f'Liton took {liton.Run} Runs')
+liton=Player("Liton out at 0 balls")
+print(liton.Run)
+print(liton.repeat("Liton Liton Duck Pari\n",3))
+
+#Generic(py3.9+)
+
+
+from typing import TypeVar, Generic
+
+T = TypeVar('T')
+class Container(Generic[T]):
+    def __init__(self, value: T):
+        self.value = value
+    def adder(self):
+        return self.value+self.value
+
+con1 = Container(23456789.987654)
+print("Type of con1", type(con1.value))
+print(con1.value)
+print(con1.adder())
+print('\n')
+con2 = Container("Amar code Davin maire dibe ")
+print("Type of con2", type(con2.value))
+print(con2.value)
+print(con2.adder())
+
