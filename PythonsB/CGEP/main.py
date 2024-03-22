@@ -43,6 +43,21 @@ cube_tuples = tuple((x, x**3) for x in range(10))
 print(f'Cubes w Tuple of Tuples: {cube_tuples}')
 print()
 
+# Generator function
+def square_numbers(n):
+    for i in range(n):
+        yield i ** 2
+
+# Generator expression
+squares = (i ** 2 for i in range(10))
+
+# Using generator function
+for num in square_numbers(5):
+    print(num)
+
+# Using generator expression
+for num in squares:
+    print(num)
 
 
 
