@@ -43,6 +43,8 @@ cube_tuples = tuple((x, x**3) for x in range(10))
 print(f'Cubes w Tuple of Tuples: {cube_tuples}')
 print()
 
+
+
 # Generator function
 def square_numbers(n):
     for i in range(n):
@@ -56,6 +58,33 @@ for num in square_numbers(5):
     print(num)
 
 # Using generator expression
+for num in squares:
+    print(num)
+
+def fibonacci():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+fib_gen = fibonacci()
+for _ in range(10):
+    print(next(fib_gen))
+
+# Generator Function
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+# Generator Expression
+squares = (x ** 2 for x in range(5))
+
+# Using the Generator Function
+for num in countdown(3):
+    print(num)
+
+# Using the Generator Expression
 for num in squares:
     print(num)
 
