@@ -151,6 +151,57 @@ even_squared = [x**2 for x in numbers if x % 2 == 0]
 print("Original Numbers:", numbers)
 print("Even Squared:", even_squared)
 
+###paradigms(Examples)
+
+# Imperative Programming
+num = 5
+if num > 0:
+    print("Number is positive.")
+
+# Procedural Programming
+def add(a, b):
+    return a + b
+
+result = add(3, 4)
+print("Result of addition:", result)
+
+# Object-Oriented Programming (oop)
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+my_dog = Dog("Buddy")
+my_dog.bark()
+
+# Functional Programming
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print("Squared Numbers:", squared_numbers)
+
+# Declarative Programming
+from collections import Counter
+
+word_counts = Counter(["apple", "banana", "apple", "orange", "banana", "apple"])
+print("Word Counts:", word_counts)
+
+# Event-Driven Programming 
+from tkinter import Tk, Button
+
+def button_click():
+    print("Button clicked!")
+
+root = Tk()
+btn = Button(root, text="Click me", command=button_click)
+btn.pack()
+root.mainloop()
+
+
+
+
+
 
 
 
